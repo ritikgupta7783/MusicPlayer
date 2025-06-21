@@ -4,8 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-   base: '/GREY-MUSIC-PLAYER/',
+  base: '/',  // ✅ Fixed base path for Vercel
   plugins: [
     tailwindcss(),
-    react()],
+    react()
+  ],
 })
